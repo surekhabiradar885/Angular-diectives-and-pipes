@@ -10,3 +10,12 @@
 
 <button (click)="condition=!condition">toggle</button>
 <p *appIf="condition">Hi, I am structural directive</p>
+<p *ngIf="name | async; else loading">Hi, my name is {{name | async }}</p>
+<ng-template #loading>
+<p>Loading</p>
+</ng-template>
+
+<label for="numberValue">Enter the number to find square root </label>
+<input  type="number" id="numberValue" name="value" [(ngModel)]="value">
+
+<p *ngIf="value">The square root of {{ value | sqrt }}</p>
