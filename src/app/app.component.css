@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+}
+.wrap{
+    padding-right: 10px;
+}
+.active-class{
+    background-color: gainsboro;
+}
